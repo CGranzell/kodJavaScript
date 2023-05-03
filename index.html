@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="kodtest">
+ 
+
+</head>
+
+<body>
+ 
+<form >
+  <!-- Anger höjd på rummet -->
+  <label>Enter  the height of the room,Y-axis</label>
+  <input type="number" name="roomHeight" id="roomHeight" min="0"/> <br />
+<!-- Anger bredd på rummet -->
+  <label>Enter  the width of the room,  X-axis</label>
+  <input type="number" name="roomWidth" id="roomWidth" min="0"/> <br />
+
+
+  <!-- Anger startposition Y axel -->
+  <label>Enter starting position Y-axis</label>
+  <input type="number" name="currentPositionY" id="currentPositionY" min="0"/> <br />
+  <!-- Anger startposition X axel -->
+  <label>Enter starting position X-axis</label>
+  <input type="number" name="currentPositionX" id="currentPositionX" min="0"/> <br />
+
+  <!-- Anger start riktning på bilen-->
+  <label>Enter start Direction of the car of the RC car <br/> n=North, s=South, w=West, e=East</label>
+  <input type="text" name="currentDirection" id="currentDirection" /> <br />
+
+  <label>Enter the commands to execute<br/> f=forward, b = backward, l= left, r = right  </label>
+  <input type="text" name="commands" id="commands" /> <br />
+
+  <input type="button" name="button" value="Click" onClick="onSubmit()">
+
+  <div>
+    <p id="result"></p>
+  </div>
+</form>
+
+ 
+
+  <script src="main.js"></script>
+</body>
+</html>
